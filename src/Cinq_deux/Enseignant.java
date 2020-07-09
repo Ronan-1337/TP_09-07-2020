@@ -1,4 +1,4 @@
-package CinqPointDeux;
+package Cinq_deux;
 
 public abstract class Enseignant {
 	

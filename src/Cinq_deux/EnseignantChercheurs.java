@@ -1,4 +1,4 @@
-package CinqPointDeux;
+package Cinq_deux;
 
 public class EnseignantChercheurs extends Enseignant{
 	
