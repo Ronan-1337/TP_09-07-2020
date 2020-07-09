@@ -3,8 +3,8 @@ package deux_douze;
 import java.time.Instant;
 
 public class PriseMedoc extends Soin{
-	int posologie;
-	int frequence;
+	private int posologie;
+	private int frequence;
 	
 	public PriseMedoc(Soignant praticien, Instant date, int birthYear, int birthMonth, int birthDate, int amelioration,
 			int posologie, int frequence) throws IllegalArgumentException {
@@ -12,7 +12,13 @@ public class PriseMedoc extends Soin{
 		this.posologie = posologie;
 		this.frequence = frequence;
 	}
-
+	public int getPosologie() {
+		return posologie;
+	}
+	public int getFrequence() {
+		return frequence;
+	}
+	
 	public void medocParJour() {
 		System.out.println("le patient doit prendre "+posologie+" medicaments, "+frequence+" fois par jour, il doit donc prendre au total "+posologie*frequence+" medicaments par jour.");
 	}

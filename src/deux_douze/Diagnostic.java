@@ -3,8 +3,8 @@ package deux_douze;
 import java.time.Instant;
 
 class Diagnostic extends ActeMed{
-	Maladie maladie;
-	int validite; // fiabilité du diagnostic, entre 0 et 100%
+	private Maladie maladie;
+	private int validite; // fiabilité du diagnostic, entre 0 et 100%
 	
 	public Diagnostic(Soignant praticien, Instant date, int birthYear, int birthMonth, int birthDate, Maladie maladie,
 			int validite) throws IllegalArgumentException {
@@ -15,6 +15,11 @@ class Diagnostic extends ActeMed{
 		else
 			this.validite = validite;
 	}
+	public Maladie getMaladie() {
+		return maladie;
+	}
+	public int getValidite() {
+		return validite;
+	}
 	
-
 } 
