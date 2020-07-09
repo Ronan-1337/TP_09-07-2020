@@ -1,4 +1,4 @@
-package deuPoainOnz;
+package deux_onze;
 
 public class Personne {
 		String nom, prenom;

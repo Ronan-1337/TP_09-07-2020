@@ -1,9 +1,11 @@
-package deuPoainOnz;
+package deux_onze;
 
-public class EluEconome extends Elu{
+public class EluEscroc extends Elu{
+	int compteEnSuisse;
 
-	public EluEconome(String nom, String prenom, int dotation) {
+	public EluEscroc(String nom, String prenom, int dotation, int compteEnSuisse) {
 		super(nom, prenom, dotation);
+		this.compteEnSuisse = compteEnSuisse;
 	}
 
 	@Override
@@ -20,5 +22,7 @@ public class EluEconome extends Elu{
 				dotation = dotation - (dotation/assistants.size());
 			}
 		}
+		compteEnSuisse = dotation;
+		dotation = 0;
 	}
 }

@@ -1,4 +1,4 @@
-package dePwainDisse;
+package deux_dix;
 
 public class Question {
 		String enonce;
