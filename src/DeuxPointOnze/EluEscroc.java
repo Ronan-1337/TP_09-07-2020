@@ -1,4 +1,4 @@
-package deuPoainOnz;
+package DeuxPointOnze;
 
 public class EluEscroc extends Elu{
 	int compteEnSuisse;

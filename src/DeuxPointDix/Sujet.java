@@ -1,4 +1,4 @@
-package dePwainDisse;
+package DeuxPointDix;
 
 public class Sujet {
 	Question[] questions = new Question[20];
